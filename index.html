@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affichage des Sous-sections</title>
+    <link rel="stylesheet" href="New_site.css">
+</head>
+
+<body>
+    <script src="New_site.js"></script>
+    <script src="validate_form.js"></script>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="PythAca.jpeg">
+            </div>
+            <div class="Pytha_cademy">
+                <h2><span>PythA</span>cademy</h2>
+            </div>
+        </div>
+    <div class="button-container">
+        <button class="toggle-button" onclick="toggleSubsection('subsection1')">ADMISSIONS ET BOURSES</button>
+        <button class="toggle-button" onclick="toggleSubsection('subsection2')">CORRECTION DE DEVOIR</button>
+    </div>
+
+    <div id="subsection1" class="subsection">
+        <h3>Formulaire d'admission ou de Bourses d'etude</h3>
+        <form form action="https://formsubmit.co/pythamoua@gmail.com" method="POST" id="registrationForm" onsubmit="return validateForm()"  enctype="multipart/form-data>
+            <label for="name">Nom & Prenom<span>*</span> :</label>
+            <input type="text" id="name" name="name" placeholder="nom et prenom" required><br><br>
+
+            <label for="email">Adresse e-mail<span>*</span> :</label>
+            <input type="email" id="email" name="email"  placeholder="votre email"><br><br>
+
+            <label for="phone">Numéro de téléphone <span>*</span>  :</label>
+            <input type="tel" id="phone" name="phone" placeholder="Entrez votre numéro de téléphone (ex: +33 6 12 34 56 78)" required><br><br>
+            <label for="myfile">Votre Diplome<span>*</span>:</label>
+            <input type="file" id="myfile" name="myfile" accept=".pdf,.doc,.docx,.jpg,.png" required><br>
+            <label for="myfile">Vos Releves de notes<span>*</span>:</label>
+            <input type="file" id="myfile" name="myfile" accept=".pdf,.doc,.docx,.jpg,.png" required><br>   
+            <label for="myfile">Certificat de langue:</label>
+            <input type="file" id="myfile" name="myfile" accept=".pdf,.doc,.docx,.jpg,.png"><br><br>  
+            <!-- Champ caché pour la redirection après soumission -->
+            <input type="hidden" name="_next" value="https://siteremerciement-c2jfpz576-pythas-projects.vercel.app/">  
+
+            
+            <!-- Champ caché pour activer la réponse automatique -->
+
+            <input type="hidden" name="_autoresponse" value="Merci pour votre message. Nous reviendrons vers vous dès que possible.">  
+
+            <button id="submit" type="submit">Envoyer</button>
+        </form>
+    </div>
+
+    <div id="subsection2" class="subsection">
+        <h3>Formulaire pour envoi de devoirs</h3>
+
+        <form form action="https://formsubmit.co/pythamoua@gmail.com" method="POST" id="registrationForm" onsubmit="return validateForm()"  enctype="multipart/form-data>
+            <label for="name">Nom & Prenom<span>*</span> :</label>
+            <input type="text" id="name" name="name" placeholder="nom et prenom" required><br><br>
+
+            <label for="email">Adresse e-mail<span>*</span> :</label>
+            <input type="email" id="email" name="email"  placeholder="votre email"><br><br>
+
+            <label for="phone">Numéro de téléphone <span>*</span>  :</label>
+            <input type="tel" id="phone" name="phone" placeholder="Entrez votre numéro de téléphone (ex: +33 6 12 34 56 78)"  required><br><br>
+            <label for="myfile">Inserez votre Devoir ici <span>*</span>:</label>
+            <input type="file" id="my_homework" name="myfile"accept=".pdf,.doc,.docx,.jpg,.png" required><br><br><br>
+
+            <label for="text">Choix de Matiere <span>*</span>  :</label>
+            <select id="options" name="options">
+                <option value="option1">Mathematiques</option>
+                <option value="option2">Physiques</option>
+                <option value="option3">Anglais</option>
+                
+            </select><br><br>
+            <label for="text">Niveau  <span>*</span>  :</label>
+            <select id="options" name="options">
+                <option value="option1">sixeme</option>
+                <option value="option2">Cinquieme</option>
+                <option value="option3">Quatrieme</option>
+                <option value="option4">Troisieme</option>
+                <option value="option1">Seconde</option>
+                <option value="option2">Premiere</option>
+                <option value="option3">Terminale</option>
+                <option value="option4">Licence</option>
+            </select><br><br><br><br><br><br>
+                <!-- Champ caché pour la redirection après soumission -->
+           
+            
+            <!-- Champ caché pour activer la réponse automatique -->
+            <input type="hidden" name="_autoresponse" value="Merci pour votre message. Nous reviendrons vers vous dès que possible.">   
+            <input type="hidden" name="_next" value="https://siteremerciement-c2jfpz576-pythas-projects.vercel.app/">  
+
+
+
+            <button id="submit" type="submit">Envoyer</button>
+           
+        </form>
+    </div>
+ <div class="directive">
+        <p><span>NB</span>: <i>Le documents scannés ou photographiés doivent etre bien visibles.<br> Veuillez
+        fournir vos coordonnées afin de vite vous contacter. les frais de services dependront du travail reçu.</i></p>
+    </div>
+
+</div>
+<footer>
+<div class="my_foot">
+    <h3>Nos reseaux sociaux</h3>
+    <ul>
+        <li><a href="https://www.facebook.com/MRUSSE225">Facebook</a></li>
+        <li><a href="https://www.instagram.com/m.russe225?igsh=MW96N3k1OHJncmdlZw%3D%3D&utm_source=qr">instagram</li>
+        <li ><a href="https://t.me/dpytha91">Telegram</a></li>
+    </ul>
+</div>
+
+
+</footer>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyA9wPJpZXTJpgo72MRtV-CcxULpGlluzt0",
+      authDomain: "academypytha.firebaseapp.com",
+      projectId: "academypytha",
+      storageBucket: "academypytha.appspot.com",
+      messagingSenderId: "467963610186",
+      appId: "1:467963610186:web:304f7bb5fa0d4dab4212b3"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+
+  
+</body>
+</html>
